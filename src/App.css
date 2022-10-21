@@ -21,6 +21,25 @@
   font-size: 1.4rem;
 }
 
+.form_wrapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_class {
+  width: 40%;
+  border: 3px solid black;
+  padding: 12px;
+}
+.form_input {
+  padding: 12px;
+  margin-bottom: 15px;
+}
+.form_button {
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
