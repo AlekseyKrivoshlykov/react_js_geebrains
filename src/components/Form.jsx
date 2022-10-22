@@ -1,11 +1,7 @@
-// import { useEffect } from "react";
-// import { useState } from "react"
-import React from 'react'
-
-/* 3 задание:
-        Добавить и стилизовать форму - поле для ввода текста и кнопка для отправки сообщения.
-    При отправке сообщения обновление UI должно происходить за счет обновления стейта App. 
-*/
+import React, { useRef } from 'react'
+import Button from '@mui/material/Button';
+import { TextField } from '@mui/material';
+import Stack from '@mui/material/Stack';
 
 export class Form extends React.Component {
     state = {
@@ -23,10 +19,13 @@ export class Form extends React.Component {
     render() {
         return <div className="form_wrapp">
                 <form className="form_class" onClick={this.preventDefault}>
-                    <input className="form_input" type="text" onChange={this.handleChangeName} />
-                    <div>{this.state.name}</div>
+                    <TextField margin="normal" id="outlined-basic" label="Введите текст" variant="outlined" onChange={this.handleChangeName}/>
                     <br/>
-                    <button className="form_button">Click</button>
+                    <TextField margin="normal" id="standard-basic" label={this.state.name} variant="standard" />
+                    <br/>
+                    <div className="form_button">
+                        <Button margin="normal" variant="contained">Click please</Button>
+                    </div>
                     </form>
             </div>
             

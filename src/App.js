@@ -6,9 +6,12 @@ import { ChildApp }  from './components/ChildApp';
 import React, { useEffect, useState } from 'react';
 import { MessageList } from './components/MessageList';
 import { FormRobot } from './components/FormRobot';
+import { Chat } from './components/Chat';
 
 
 export function App () {
+
+  const [chatMessages, setChatMessages] = useState([])
 
   return (
     <div className="App">
@@ -18,12 +21,13 @@ export function App () {
     <FormClass />
     <hr/>
     <FormRobot />
+    <hr/>
+    <Chat />
      
     </div>
     
   );
 
 }
-
 
 export default App;

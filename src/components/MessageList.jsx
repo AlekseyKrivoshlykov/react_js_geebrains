@@ -24,8 +24,8 @@ export function MessageList () {
   return (
     <> 
       <div className="App">
-         {placeHolder.map(function(item) {
-          return <div key={item.id}>
+         {placeHolder.map(function(item, index) {
+          return <div key={index}>
                     <h3>{item.author}</h3>
                     <p>{item.text}</p>
                   </div> 
