@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 import { MessageList } from './components/MessageList';
 import { FormRobot } from './components/FormRobot';
 import { Chat } from './components/Chat';
+import { Routing } from './components/Routing';
 
 
 export function App () {
@@ -16,13 +17,15 @@ export function App () {
   return (
     <div className="App">
 
-    <MessageList />
+    {/* <MessageList />
     <hr/>
     <FormClass />
     <hr/>
     <FormRobot />
     <hr/>
-    <Chat />
+    <Chat /> */}
+
+    <Routing />
      
     </div>
     
