@@ -8,27 +8,29 @@ import { MessageList } from './components/MessageList';
 import { FormRobot } from './components/FormRobot';
 import { Chat } from './components/Chat';
 import { Routing } from './components/Routing';
-
+import { Provider } from 'react-redux';
+import { store } from './components/store/index';
 
 export function App () {
 
   const [chatMessages, setChatMessages] = useState([])
 
   return (
-    <div className="App">
+    <Provider store={store}>
+      <div className="App">
 
-    {/* <MessageList />
-    <hr/>
-    <FormClass />
-    <hr/>
-    <FormRobot />
-    <hr/>
-    <Chat /> */}
+      {/* <MessageList />
+      <hr/>
+      <FormClass />
+      <hr/>
+      <FormRobot />
+      <hr/>
+      <Chat /> */}
 
-    <Routing />
-     
-    </div>
-    
+      <Routing />
+      
+      </div>
+    </Provider>
   );
 
 }
