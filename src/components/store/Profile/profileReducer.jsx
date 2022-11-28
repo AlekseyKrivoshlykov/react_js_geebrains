@@ -1,7 +1,9 @@
-const initialState = {
-    name: 'Aleksey',
-    visible: true,
-};
+// const initialState = {
+//     name: 'Aleksey',
+//     visible: true,
+// };
+
+import { initialState } from "../initialState";
 
 export const profileReducer = (state = initialState, action) => {
     switch(action.type) {

@@ -23,7 +23,7 @@ export const Routing = () => {
                         <Route path=":chatId" element = {<ChatsPage />}></Route>
                     </Route>
                     <Route path='/profile' element = {<Profile />}></Route>
-                    <Route path="*" element = {<NotFoundPage/>}></Route>
+                    <Route path="/no_chat" element = {<NotFoundPage/>}></Route>
                 </Routes>
             </div>
         </BrowserRouter>

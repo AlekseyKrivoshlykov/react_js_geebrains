@@ -23,14 +23,14 @@ export function FormRobot () {
         setMessage(
                 <div>
                     {roboMess.map(function(item, index) {
-               return (
-                   <div key={index}>
-                       <h3>{item.Author}</h3>
-                       <p>{item.Message}</p>
-                    </div>
-                    )
-               })} 
-           </div>
+                        return (
+                            <div key={index}>
+                                <h3>{item.Author}</h3>
+                                <p>{item.Message}</p>
+                            </div>
+                        )
+                    })} 
+                </div>
         ) 
     }
 
