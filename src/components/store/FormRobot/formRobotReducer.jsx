@@ -1,11 +1,12 @@
 import { initialState } from "../initialState";
 
-export const profileReducer = (state = initialState, action) => {
+export const formRobotReducer = (state = initialState, action) => {
     switch(action.type) {
-        case 'visible': {
+        case 'addMessage': {
             return {
                 ...state,
-                visible: !state.visible,
+                Author: 'Robot',
+                Message: 'Message is recieved!'
             };
         }
         default: {
