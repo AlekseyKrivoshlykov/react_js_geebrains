@@ -16,4 +16,11 @@ export const initialState = {
       },
   },
 
+    robotMessage: {
+            // Author: 'Robot',
+            // Message: 'Your message is received.',
+            Author: '',
+            Message: '',
+    },
+
 }

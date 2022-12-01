@@ -1,10 +1,8 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
-import { ChatList, ChatMessages, ChatsPage } from "../pages/Chats"
-import { Home } from "../pages/Home"
-import { NotFoundPage } from "../pages/NotFoundPage"
-import { Profile } from "../pages/Profile"
-
-
+import { ChatList, ChatMessages, ChatsPage } from "../../pages/Chats"
+import { Home } from "../../pages/Home"
+import { NotFoundPage } from "../../pages/NotFoundPage"
+import { ProfilePage } from "../../pages/Profile"
 
 export const Routing = () => {
 
@@ -22,7 +20,7 @@ export const Routing = () => {
                     <Route path='/chats' element = {<ChatsPage />}>
                         <Route path=":chatId" element = {<ChatsPage />}></Route>
                     </Route>
-                    <Route path='/profile' element = {<Profile />}></Route>
+                    <Route path='/profile' element = {<ProfilePage />}></Route>
                     <Route path="/no_chat" element = {<NotFoundPage/>}></Route>
                 </Routes>
             </div>

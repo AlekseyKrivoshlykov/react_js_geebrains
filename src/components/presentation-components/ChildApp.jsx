@@ -1,5 +1,4 @@
 
-
 export const ChildApp = (props) => {
 
     const message = 'const'
