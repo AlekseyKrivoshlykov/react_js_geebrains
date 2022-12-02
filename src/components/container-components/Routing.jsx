@@ -1,4 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
+import { CharactersPage } from "../../pages/Characters"
 import { ChatList, ChatMessages, ChatsPage } from "../../pages/Chats"
 import { Home } from "../../pages/Home"
 import { NotFoundPage } from "../../pages/NotFoundPage"
@@ -12,6 +13,7 @@ export const Routing = () => {
                 <Link to  = '/'>Главная страница</Link>
                 <Link to  = '/chats'>Чаты</Link>
                 <Link to  = '/profile'>Профиль</Link>
+                <Link to  = '/characters'>Данные API</Link>
             </div>
 
             <div>
@@ -22,6 +24,7 @@ export const Routing = () => {
                     </Route>
                     <Route path='/profile' element = {<ProfilePage />}></Route>
                     <Route path="/no_chat" element = {<NotFoundPage/>}></Route>
+                    <Route path='/characters' element = {<CharactersPage />}></Route>
                 </Routes>
             </div>
         </BrowserRouter>

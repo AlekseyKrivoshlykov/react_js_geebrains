@@ -55,6 +55,16 @@
   margin-bottom: 2rem;
 }
 
+.characters_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.characters_row {
+  border: 1px solid black;
+  margin-bottom: 3px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
