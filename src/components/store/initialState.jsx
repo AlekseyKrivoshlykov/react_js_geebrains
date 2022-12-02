@@ -1,3 +1,5 @@
+import { STATUSES } from "./CharactersFromAPI/actions";
+
 export const initialState = {
     profile: {
       name: 'Aleksey',
@@ -14,13 +16,18 @@ export const initialState = {
       name: "Chat2",
       messages: [{ text: "Сообщение 2 чата", author: "Me" }],
       },
-  },
+    },
 
     robotMessage: {
-            // Author: 'Robot',
-            // Message: 'Your message is received.',
             Author: '',
             Message: '',
     },
 
+    characters: {
+      characters: [],
+      request: STATUSES.IDLE,
+      error: null,
+      loading: false,
+    },
+    
 }
