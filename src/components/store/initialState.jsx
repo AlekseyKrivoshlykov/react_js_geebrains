@@ -4,6 +4,7 @@ export const initialState = {
     profile: {
       name: 'Aleksey',
       visible: true,
+      isAuth: false,
     },
     
     chats: {
