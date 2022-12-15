@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button UI render with snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="btn btn-primary"
+  >
+    Change visible
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button render render with snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="btn btn-primary"
+  >
+    Change visible
+  </button>
+</DocumentFragment>
+`;
