@@ -11,14 +11,14 @@ export function App () {
   const [chatMessages, setChatMessages] = useState([])
 
   return (
-    <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <div className="App">
+    // <Provider store={store}>
+    //   <PersistGate persistor={persistor}>
+    //     <div className="App">
           <Routing />
-        </div>
-      </PersistGate>
-    </Provider>
-  );
+    //     </div>
+    //   </PersistGate>
+    // </Provider>
+  )
 
 }
 
